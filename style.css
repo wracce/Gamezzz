@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  width: 320px;
+  height: 320px;
+  background: rgb(230, 230, 192);
+}
+
+.cell {
+  color: rgb(22, 57, 88);
+  background: rgb(66, 185, 206) !important;
+  transition: all 0.3s cubic-bezier(0.5, 1, 0.89, 1);;
+}
