@@ -113,7 +113,7 @@ function clickCell(ev) {
   let powerSize = parent.powerSize;
 
   for (const value of [id + 1, id - 1, id + powerSize, id - powerSize]) {
-    if (value % powerSize < 0 || value % powerSize >= powerSize) {
+    if (value % powerSize < 0 || Math.abs(id%powerSize - value%powerSize) > 1) {
       continue;
     }
     if (
